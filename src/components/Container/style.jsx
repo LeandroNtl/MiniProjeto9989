@@ -24,7 +24,7 @@ const StyledContainer = styled.div`
     overflow-x: ${props => props.overflow_x || 'hidden'};
 
     ::-webkit-scrollbar {
-        width: 0px;
+        display: none;
     }
 
 

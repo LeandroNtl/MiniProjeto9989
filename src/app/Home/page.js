@@ -7,7 +7,7 @@ const Home = () => {
 
     const [news, setNews] = useState([]);
 
-    const defaultImage = "https://static.todamateria.com.br/upload/pa/is/paisagem-natural-og.jpg"
+    const defaultImage = "https://www.multicoopersp.com.br/wp-content/uploads/2017/04/tecnologia-da-informa%C3%A7%C3%A3o.jpg"
 
     useEffect(() => {
 
@@ -29,23 +29,25 @@ const Home = () => {
         <Container padding="10px" gap="5px" mobile_direction="column">
 
             {/* Container das principais noticias */}
-            <Container width="40%" mobile_width="100%" border="1px solid #205701" radius="10px">
+            <Container width="40%" mobile_width="100%" border="1px solid #205701" radius="10px" padding="10px">
+
+                <img src="https://guiaderodas.com/wp-content/uploads/2020/06/tecnologia-assistiva-o-que-e.jpg" />
 
             </Container>
 
             <Container width="60%" direction="column" gap="5px" mobile_width="100%">
 
                 {/* Container das noticias do curso de ADS */}
-                <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start">
+                <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start" mobile_padding="0px">
 
                     {localNews.map((item) => {
-                        return <Card title={item.title} url={item.url} image={item.urlToImage} />
+                        return <Card title={item.title} url={item.url} image={item.urlToImage} mobile=""/>
                     })}
 
                 </Container>
 
                 {/* Container das noticias externas */}
-                <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start">
+                <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start" mobile_padding="0px">
                     
                     {news.map((item) => {
                         return <Card title={item.title} url={item.url} image={item.urlToImage ? item.urlToImage : defaultImage} />
