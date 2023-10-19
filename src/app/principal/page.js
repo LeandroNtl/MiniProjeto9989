@@ -1,15 +1,15 @@
 import Page from "../page";
 
-const Special = () => {
+const Principal = () => {
 
     return (
   
       <Page>
-        <h1>Special</h1>
+        <h1>Principal</h1>
       </Page>
   
     );
   
 };
 
-export default Special;
+export default Principal;

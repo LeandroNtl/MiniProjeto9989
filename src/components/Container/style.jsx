@@ -21,6 +21,13 @@ const StyledContainer = styled.div`
     padding: ${props => props.padding || '0px'};
     gap: ${props => props.gap || '0px'};
 
+    overflow-x: ${props => props.overflow_x || 'hidden'};
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+
     @media (max-width: 768px) {
 
         width: ${props => props.mobile_width || props.width || '100%'};

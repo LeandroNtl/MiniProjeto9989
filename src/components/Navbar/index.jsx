@@ -16,7 +16,7 @@ const Navbar = ({ children }) => {
                 <StyledLink href="/">Home</StyledLink>
                 <StyledLink href="/discentes">Discentes</StyledLink>
                 <StyledLink href="/docentes">Docentes</StyledLink>
-                <StyledLink href="/special">Special</StyledLink>
+                <StyledLink href="/principal">Representância</StyledLink>
                 <StyledLink href="/feedback">Feedback</StyledLink>
             </LinkContainer>
         </StyledNavbar>
