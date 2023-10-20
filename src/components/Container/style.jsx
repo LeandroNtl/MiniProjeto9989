@@ -5,6 +5,8 @@ const StyledContainer = styled.div`
     width: ${props => props.width || '100%'};
     height: ${props => props.height || '100%'};
 
+    min-height: ${props => props.min_height || '0px'};
+
     display: ${props => props.display || 'flex'};
     flex-direction: ${props => props.direction || 'row'};
     justify-content: ${props => props.justify || 'center'};

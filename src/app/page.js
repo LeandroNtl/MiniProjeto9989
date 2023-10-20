@@ -12,7 +12,7 @@ const Page = ({ children = <Home /> }) => {
 
   return (
 
-    <Container height="100vh" direction="column">
+    <Container min_height="100vh" direction="column">
       <Header>
         <Navbar>
           <Logo />

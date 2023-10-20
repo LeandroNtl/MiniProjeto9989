@@ -31,7 +31,7 @@ const ProfileImage = styled.div`
     background-repeat: no-repeat;
 
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 5px solid #205701;
 
 `;
 
@@ -67,7 +67,7 @@ const Description = styled.p`
 
     font-size: 1rem;
     font-weight: 400;
-    color: #000;
+    color: #205701;
 
     text-align: center;
 
