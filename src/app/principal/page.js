@@ -35,7 +35,7 @@ const Principal = () => {
               </SectionTitleContainer>
               <Container overflow_x="auto" justify="flex-start" mobile_padding="0px">
                 {images.map((image, index) => (
-                  <PresidentaActions image={image} text={texts[index]} />
+                  <PresidentaActions image={image} text={texts[index]} key={index} />
                 ))}
               </Container>
             </Container>

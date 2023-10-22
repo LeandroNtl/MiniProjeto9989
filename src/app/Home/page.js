@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import Card from "@/components/Card";
@@ -40,8 +41,8 @@ const Home = () => {
                 {/* Container das noticias do curso de ADS */}
                 <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start" mobile_padding="0px">
 
-                    {localNews.map((item) => {
-                        return <Card title={item.title} url={item.url} image={item.urlToImage} mobile=""/>
+                    {localNews.map((item, key) => {
+                        return <Card title={item.title} url={item.url} image={item.image} key={key} />
                     })}
 
                 </Container>
@@ -49,8 +50,8 @@ const Home = () => {
                 {/* Container das noticias externas */}
                 <Container width="100%" height="50%" border="1px solid #205701" radius="10px" overflow_x="auto" padding="10px" gap="5px" justify="flex-start" mobile_padding="0px">
                     
-                    {news.map((item) => {
-                        return <Card title={item.title} url={item.url} image={item.urlToImage ? item.urlToImage : defaultImage} />
+                    {news.map((item, key) => {
+                        return <Card title={item.title} url={item.url} image={item.urlToImage ? item.urlToImage : defaultImage} key={key} />
                     })}
 
                 </Container>
