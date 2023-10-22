@@ -1,7 +1,7 @@
 "use client"
 import Page from "../page";
 import ProfileCard from "@/components/Profile";
-import Container from "@/components/container";
+import Container from "@/components/Container";
 import discentes from "@/data/discentes";
 
 const Discentes = () => {
