@@ -14,10 +14,20 @@ const Home = () => {
 
         const getNews = async () => {
                 
-            const response = await fetch("https://newsapi.org/v2/top-headlines?country=br&category=technology&apiKey=41a25ae6fe1f44af82331f3b21df3de6");
-            const data = await response.json();
+            try {
+                const response = await fetch("https://newsapi.org/v2/top-headlines?country=br&category=technology&apiKey=41a25ae6fe1f44af82331f3b21df3de6");
+            
+                if (!response.ok) {
+                    throw new Error("Erro ao executar a requisição, status " + response.status);
+                }
 
-            setNews(data.articles);
+                const data = await response.json();
+
+                setNews(data.articles);
+
+            } catch (error) {
+                console.log(error.message);
+            }
 
         }
 
