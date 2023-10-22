@@ -12,9 +12,9 @@ const sortImages = () => {
 const localNews = [
 
     {
-        'title': 'Título da notícia 1',
+        'title': 'Aluna Sabrina Castelo é eleita representante do curso de ADS',
         'url': 'https://www.google.com.br',
-        'urlToImage': sortImages()
+        'urlToImage': "/images/principal.jpeg"
     },
 
     {
