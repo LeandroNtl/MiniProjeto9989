@@ -1,6 +1,6 @@
 "use client"
 import Page from "../page";
-import ProfileCard from "@/components/Profile";
+import ProfileCard from "@/components/Profile/index";
 import Container from "@/components/Container";
 import discentes from "@/data/discentes";
 
