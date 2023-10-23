@@ -6,7 +6,7 @@ import localNews from "@/data/news";
 
 const Home = () => {
 
-    const [news, setNews] = useState([]) || [{title: "Carregando...", url: "https://www.google.com", urlToImage: "https://www.multicoopersp.com.br/wp-content/uploads/2017/04/tecnologia-da-informa%C3%A7%C3%A3o.jpg"}];
+    const [news, setNews] = useState([]) || [{}];
 
     const defaultImage = "https://www.multicoopersp.com.br/wp-content/uploads/2017/04/tecnologia-da-informa%C3%A7%C3%A3o.jpg"
 
